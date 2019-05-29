@@ -1,3 +1,6 @@
 #Ignore the large data files
 data/*
+tags
+checkpoints/
+v4_env/
 
