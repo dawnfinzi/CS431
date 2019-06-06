@@ -26,9 +26,9 @@ TODO
 So far this attempt to fit human fMRI V4 responses from CNN features using individual naturalistic stimuli as opposed to comparing category RSMs has not been particularly successful. There are numerous potential explanations for this which will need to be ruled out (including flaws in this specific implementation). One possible hindrance would be voxel reliability issues as noisy voxels would be difficult to fit. Unfortunately, although the subjects were shown repeats of the images, the provided BOLD response data is averaged across repeats so I was unable to estimate reliability. Once bugs and/or reliability issues are ruled out, we can then ask if Alexnet conv3 is simply not a good enough model for V4 voxels, despite its success with primate neural recordings. Future work should focus on testing different models of human V4, including those that are more explicitly optimized for comparison to the ventral stream, such as TNN or CorNet, as well as factorizing the spatial and feature dimensions of the candidate models. 
 
 ### Dependencies
-python 2.7+
-GPU with CUDA libraries installed to support tensorflow
-Additionally, the packages matplotlib, pymongo, numpy, h5py, scipy, sklearn, and os are used throughout.
+- python 2.7+
+- GPU with CUDA libraries installed to support tensorflow
+- matplotlib, pymongo, numpy, h5py, scipy, sklearn, and os
 
 ### References
 Bashivan, P., Kar, K., & DiCarlo, J. (2018). Neural population control via deep image synthesis. *bioRxiv*, 461525.
