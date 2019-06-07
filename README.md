@@ -24,8 +24,8 @@ My attempts to fit individual voxels produced fairly lackluster results, as you 
 ![Subject 1](figs/S1_regs_notrain.png)
 ![Subject 2](figs/S2_regs_notrain.png)
 I then preprocessed all the images with retinawarp and tried again. This made little difference.
-![Subject 1](figs/S1_regs_retinawarp_notrain.png)
-![Subject 2](figs/S2_regs_retinawarp_notrain.png)
+![Subject 1](figs/S1_retinawarp_regs_notrain.png)
+![Subject 2](figs/S2_retinawarp_regs_notrain.png)
 While performance was pretty dismal for individual voxels, fits were much better for the average response across all V4 voxels. Below I've plotted predicted vs. actual responses on left out validation data for Subject 1, where the model achieved R^2 = .2. 
 ![avg](figs/S1_V4avg.png)
 
