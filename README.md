@@ -20,7 +20,7 @@ The code for this project is divided into the following notebooks:
 5. **fit_V4_retinawarp.ipynb** – same as above but using retinawarp outputs
 
 ### Results
-My attempts to fit individual voxels produced fairly lackluster results, as you can see here for the two subjects. Test (250 images from the original 1750 image training set) and validation (120 image validation set) performance from two regression methods (PLS and ridge regression) are plotted below, with error bars across voxels.
+My attempts to fit individual voxels produced lackluster results, as you can see here for the two subjects. Test (250 images from the original 1750 image training set) and validation (120 image validation set) performance from two regression methods (PLS and ridge regression) are plotted below, with error bars across voxels.
 ![Subject 1](figs/S1_regs_notrain.png)
 ![Subject 2](figs/S2_regs_notrain.png)
 
