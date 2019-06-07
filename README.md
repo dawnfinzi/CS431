@@ -20,16 +20,20 @@ The code for this project is divided into the following notebooks:
 5. **fit_V4_retinawarp.ipynb** – same as above but using retinawarp outputs
 
 ### Results
-<p>My attempts to fit individual voxels produced fairly lackluster results, as you can see here for the two subjects. Test (250 images from the original 1750 image training set) and validation (120 image validation set) performance from two regression methods (PLS and ridge regression) are plotted below, with error bars across voxels.
+My attempts to fit individual voxels produced fairly lackluster results, as you can see here for the two subjects. Test (250 images from the original 1750 image training set) and validation (120 image validation set) performance from two regression methods (PLS and ridge regression) are plotted below, with error bars across voxels.
 ![Subject 1](figs/S1_regs_notrain.png)
 ![Subject 2](figs/S2_regs_notrain.png)
-</p>
 
-<p>I then preprocessed all the images with retinawarp and tried again. This made little difference.</p>
+
+
+I then preprocessed all the images with retinawarp and tried again. This made little difference.
 ![Subject 1](figs/S1_retinawarp_regs_notrain.png)
 ![Subject 2](figs/S2_retinawarp_regs_notrain.png)
 
-<p>While performance was pretty dismal for individual voxels, fits were much better for the average response across all V4 voxels. Below I've plotted predicted vs. actual responses on left out validation data for Subject 1, where the model achieved r-squared = 0.20.</p>
+
+While performance was pretty dismal for individual voxels, fits were much better for the average response across all V4 voxels. Below I've plotted predicted vs. actual responses on left out validation data for Subject 1, where the model achieved r-squared = 0.20.
+
+
 ![avg](figs/S1_V4avg.png)
 
 ### Conclusions
