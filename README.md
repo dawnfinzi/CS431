@@ -20,10 +20,12 @@ The code for this project is divided into the following notebooks:
 5. **fit_V4_retinawarp.ipynb** – same as above but using retinawarp outputs
 
 ### Results
-TODO
+My attempts to fit individual voxels produced fairly lackluster results, as you can see here for the two subjects. Test (250 images from the original 1750 image training set) and validation (120 image validation set) performance from two regression methods (PLS and ridge regression) are plotted below, with error bars across voxels. 
+![Subject 1](figs/S1_regs_notrain.png)
+![Subject 2](figs/S2_regs_notrain.png)
 
 ### Conclusions
-So far this attempt to fit human fMRI V4 responses from CNN features using individual naturalistic stimuli as opposed to comparing category RSMs has not been particularly successful. There are numerous potential explanations for this which will need to be ruled out (including flaws in this specific implementation). One possible hindrance would be voxel reliability issues as noisy voxels would be difficult to fit. Unfortunately, although the subjects were shown repeats of the images, the provided BOLD response data is averaged across repeats so I was unable to estimate reliability. Once bugs and/or reliability issues are ruled out, we can then ask if Alexnet conv3 is simply not a good enough model for V4 voxels, despite its success with primate neural recordings. Future work should focus on testing different models of human V4, including those that are more explicitly optimized for comparison to the ventral stream, such as TNN or CorNet, as well as factorizing the spatial and feature dimensions of the candidate models. 
+So far this attempt to fit individual human fMRI V4 voxel responses from CNN features using individual naturalistic stimuli as opposed to comparing category RSMs has not been particularly successful. There are numerous potential explanations for this which will need to be ruled out (including flaws in this specific implementation). One possible hindrance would be voxel reliability issues as noisy voxels would be difficult to fit. Unfortunately, although the subjects were shown repeats of the images, the provided BOLD response data is averaged across repeats so I was unable to estimate reliability. Once bugs and/or reliability issues are ruled out, we can then ask if Alexnet conv3 is simply not a good enough model for V4 voxels, despite its success with primate neural recordings. Future work should focus on testing different models of human V4, including those that are more explicitly optimized for comparison to the ventral stream, such as TNN or CorNet, as well as factorizing the spatial and feature dimensions of the candidate models. 
 
 ### Dependencies
 - python 2.7+
