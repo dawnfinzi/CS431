@@ -46,4 +46,5 @@ So far this attempt to fit individual human fMRI V4 voxel responses from CNN fea
 
 ### References
 Bashivan, P., Kar, K., & DiCarlo, J. (2018). Neural population control via deep image synthesis. *bioRxiv*, 461525.
+
 Kay, K. N., Naselaris, T., Prenger, R. J., & Gallant, J. L. (2008). Identifying natural images from human brain activity. *Nature*, 452(7185), 352.
